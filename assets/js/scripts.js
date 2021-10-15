@@ -1,4 +1,3 @@
-
 let adultStoryBtn = new Audio('assets/audio/scream.wav');
 let childtStoryBtn = new Audio('assets/audio/evil_laugh.wav');
 

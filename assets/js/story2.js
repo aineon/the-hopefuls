@@ -1,21 +1,20 @@
 // Set global variables
-let storyTextEl = document.getElementById('story-text');
-let buttonOptionsEl = document.getElementById('button-options');
-let bgImage = document.getElementById('bg-image');
-
+let kStoryTextEl = document.getElementById('story-text');
+let kButtonOptionsEl = document.getElementById('button-options');
+let kBgImage = document.getElementById('bg-image');
 
 // Create startStory function
-function startStory() {
-    showScene(1)
+function kStartStory() {
+    kShowScene(1)
 }
 
 // Create show scene function
-function showScene(sceneIndex) {
+function kShowScene(sceneIndex) {
     let scene = scenes.find(scene => scene.id === sceneIndex)
-    storyTextEl.innerText = scene.text;
-    bgImage.style.backgroundImage = scene.background;
-    while (buttonOptionsEl.firstChild) {
-        buttonOptionsEl.removeChild(buttonOptionsEl.firstChild);
+    kStoryTextEl.innerText = scene.text;
+    kBgImage.style.backgroundImage = scene.background;
+    while (kButtonOptionsEl.firstChild) {
+        kButtonOptionsEl.removeChild(kButtonOptionsEl.firstChild);
     }
 
     // loop through options and create button for each
@@ -41,7 +40,7 @@ let scenes = [
     {
         id: 1,
         text: "Test Scene 1",
-        background: "url('assets/images/hands_sea.jpg')",
+        background: " ",
         options: [
             {
                 option: "Test Option 1",
